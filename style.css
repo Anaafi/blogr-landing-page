@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main1{
+    overflow: hidden;
+    padding-bottom: 156px;
+    border-radius: 0px 0px 0px 100px;
+    background: linear-gradient(135deg, #FF8F71 0%, #FF3E55 100%);
+}
+
+/*.main1-container{
+    background-image: url(./assets/Combined\ Shape.png);
+    z-index: -1;
+    border-radius: 0px 0px 0px 100px;
+}*/
+
+.main1-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 108px;
+    
+
+    
+    
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 24px 0px 24px;
+    z-index: 1;
+}
+
+.desktop-nav{
+    display: none;
+}
+
+.main1-content{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    z-index: 1;
+}
+.main1-image {
+    position: absolute;
+    top:0%;
+    /*border: 1px solid black;*/
+    right: 0px;
+}
+
+.main1-dimage{
+    display: none;
+}
+
+.main1-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.main1-text h2{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+    
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -1.08px;
+    max-width: 327px;
+}
+
+.main1-text p{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Overpass', sans-serif;;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    max-width: 327px;
+}
+
+.main1-button{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0 auto;
+}
+
+.main1-button h4{
+    color: #FF505C;
+    text-align: right;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 28px;
+    background-color: #FFF;
+    padding: 15px 17px;
+}
+
+.main1-button h5{
+    color: #FFF;
+    text-align: right;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 28px;
+    border: 1px solid #FFF;
+    padding: 15px 25px;
+}
+
+
+
+@media screen and (min-width: 974px){
+    .menu{
+        display: none;
+    }
+
+    .nav{
+        display: none;
+
+    }
+    .desktop-nav{
+       display: block;
+
+       /*flex-direction: row;
+       gap: 64px;
+       width: 100%; */
+       padding-top: 59px;
+       padding-left: 167px;
+       padding-right: 160px; 
+       z-index: 1;
+    }
+
+    .main1{
+        gap: 120px;
+    }
+    .main1-image{
+        display: none;
+    }
+
+    .main1-dimage {
+        display: block;
+        position: absolute;
+        top:0%;
+        /*border: 1px solid black;*/
+        right: 0px;
+    }
+
+    .nav-items{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /*border: 1px solid black;*/
+        margin: 0 auto;
+        
+    }
+
+    .nav-left{
+        display: flex;
+        gap: 32px;
+    
+        
+    }
+
+    .left-items{
+        display: flex;
+        gap: 8px;
+    }
+
+    .left-items h5{
+        color: #FFF;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .nav-right{
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+    .nav-right h5{
+        color: #FFF;
+        /*text-align: right;*/
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .nav-right h4{
+        color: #FF505C;
+        text-align: right;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 28px;
+        background-color: #FFF;
+        padding: 15px 40px;
+    }
+
+    .main1-text h2{
+        font-size: 64px;
+        letter-spacing: -1.92px;
+        max-width: 920px;
+
+    }
+
+    .main1-text p{
+        font-size: 20px;
+        max-width: none;
+    }
+}
