@@ -74,18 +74,22 @@
     font-weight: 600;
     line-height: normal;
     letter-spacing: -1.08px;
-    max-width: 327px;
+    /*max-width: 327px;*/
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .main1-text p{
     color: #FFF;
     text-align: center;
-    font-family: 'Overpass', sans-serif;;
+    font-family: 'Overpass', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
-    max-width: 327px;
+    /*max-width: 327px;*/
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .main1-button{
@@ -121,7 +125,105 @@
     padding: 15px 25px;
 }
 
+.main2{
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+}
 
+.main2-text1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 38px;
+}
+
+.main2-text1 h3{
+    color: #1F3E5A;
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.84px;
+    padding-top: 100px;
+}
+
+.main2-text2{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.main2-text2-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.main2-text2-top h3{
+    color: #1F3E5A;
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    padding-left: 33px;
+   padding-right: 24px;
+}
+
+.main2-text2-top p{
+    color: #4C5862;
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+   padding-left: 33px;
+   padding-right: 24px;
+}
+
+.main2-text2-down{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 100px;
+}
+
+.main2-text2-down h3{
+    color: #1F3E5A;
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    padding-left: 33px;
+   padding-right: 24px;
+}
+
+.main2-text2-down p{
+    color: #4C5862;
+    text-align: center;
+    font-family: 'Overpass', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.5px;
+    padding-left: 33px;
+   padding-right: 24px;
+}
+
+.main2-dimage{
+    display: none;
+}
 
 @media screen and (min-width: 974px){
     .menu{
@@ -227,5 +329,78 @@
     .main1-text p{
         font-size: 20px;
         max-width: none;
+    }
+
+    .main2{
+        gap: 93px;
+        position: relative;
+    }
+
+    .main2-content{
+        /*position: relative;*/
+        display: flex;
+       
+        /*flex-direction: row;*/
+    }
+
+    .main2-dimage{
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 70px;
+        z-index: -1;
+        /*border: 1px solid black;*/
+        
+    }
+
+    .main2-mimage{
+        display: none;
+    }
+
+    .main2-text2{
+        padding-left: 165px;
+    }
+
+    .main2-text1 h3{
+        font-size: 40px;
+        letter-spacing: -1.2px;
+        padding-top: 150px;
+    }
+
+    .main2-text2-top{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .main2-text2-top h3{
+        padding: 0px;
+    }
+
+    .main2-text2-top p{
+        width: 540px;
+        padding: 0px;
+        text-align: left;
+        padding-right: 90px;
+    }
+
+    .main2-text2-down{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding-bottom: 0px;
+    }
+
+    .main2-text2-down h3{
+        padding: 0px;
+    }
+
+    .main2-text2-down p{
+        width: 540px;
+        padding: 0px;
+        text-align: left;
+        padding-right: 90px;
     }
 }
