@@ -311,6 +311,7 @@
     flex-direction: column;
     padding-top: 154px;
     gap: 83px;
+    padding-bottom: 100px;
 }
 
 .main4-textbox{
@@ -359,6 +360,49 @@
 .main4-dimage{
     display: none;
 }
+
+footer{
+    border-radius: 0px 100px 0px 0px;
+    background-color: #24242C;
+}
+
+.main5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.main5-text1, .main5-text2, .main5-text3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.main5-text1 h4, .main5-text2 h4, .main5-text3 h4{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 33px;
+}
+
+.main5-text1 h5, .main5-text2 h5, .main5-text3 h5{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    opacity: 0.75;
+}
+
 
 
 @media screen and (min-width: 430px){
@@ -642,6 +686,7 @@
     
     .main4-text1{
         align-items: flex-start;
+
     }
 
     .main4-text2{
@@ -651,6 +696,35 @@
     .main4-text1 p, .main4-text2 p{
         padding-left: 0px;
         text-align: left;
+        padding-right: 165px;
+    }
+
+    .main5{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0px;
+        padding-top: 70px;
+        padding-left: 165px;
+        padding-right: 165px;
+        /*border: 1px solid red;*/
+    }
+
+    .main5-logo{
+        /*border: 1px solid red;*/
+        padding-bottom: 230px;
+    }
+
+    .main5-text2{
+        padding-bottom: 40px;
+    }
+
+    .main5-text3{
+        padding-bottom: 80px;
+    }
+
+    .main5-text1, .main5-text2, .main5-text3{
+        align-items: flex-start;
     }
 }
 
